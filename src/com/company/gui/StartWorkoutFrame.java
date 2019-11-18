@@ -1,16 +1,12 @@
-package com.company.logic;
+package com.company.gui;
 
 import com.company.domain.Workout;
 import com.company.events.DetailEvent;
 import com.company.events.DetailListener;
-
-//
-//import com.mongodb.MongoClient;
-//import com.mongodb.MongoClientURI;
-//import com.mongodb.client.MongoCollection;
-//import com.mongodb.client.MongoDatabase;
-//import org.bson.Document;
-//import org.bson.conversions.Bson;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,7 +17,6 @@ public class StartWorkoutFrame extends JFrame {
 
     private ExerciseDetailsPanel exerciseDetailsPanel;
     private WorkoutDatePanel workoutDatePanel;
-    //private final JScrollPane scrollPane;
     private Workout workout;
 
     public StartWorkoutFrame(String title) {
@@ -29,16 +24,12 @@ public class StartWorkoutFrame extends JFrame {
 
         setLayout(new BorderLayout());
 
-        //adds workout to datebase (datebase not yet created)
         JButton saveWorkoutButton = new JButton("Save Workout");
 
         this.exerciseDetailsPanel = new ExerciseDetailsPanel();
         this.workoutDatePanel = new WorkoutDatePanel();
 
-        //this.scrollPane = new JScrollPane();
         final JTextArea textArea = new JTextArea();
-        //this.scrollPane.setViewportView(textArea);
-
 
         this.exerciseDetailsPanel.addDetailListener(new DetailListener(){
             public void detailEventOccurred(DetailEvent event){
@@ -68,12 +59,21 @@ public class StartWorkoutFrame extends JFrame {
     }
 
     public void saveWorkout() {
+        //add the date and exercise lists to database
         this.workout = this.workoutDatePanel.getWorkout();
+        this.workoutDatePanel.getWorkout().getDate();
         this.workout.addWorkout(this.exerciseDetailsPanel.getExerciseList());
 
-        String uri = "mongodb+srv://Rowston:<NfB2014!>@cluster0-m0ohq.mongodb.net/test";
-//        MongoClientURI clientURI = new MongoClientURI(uri);
-//        MongoClient mongoClient = new MongoClient(clientURI);
+
+        String uri = "mongodb+srv://Rowston:<NfB2014!>@cluster0-mgb11.mongodb.net/test";
+        MongoClientURI clientURI = new MongoClientURI(uri);
+        MongoClient mongoClient = new MongoClient(clientURI);
+
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("WorkoutTracker");
+        MongoCollection collection = mongoDatabase.getCollection("Workouts");
+
+        //Document document = new Document("Date", )
+        //make method or class that gets key and values from hashmap created by user input
 
     }
 }

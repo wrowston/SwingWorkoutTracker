@@ -1,4 +1,4 @@
-package com.company.logic;
+package com.company.gui;
 
 import javax.swing.*;
 

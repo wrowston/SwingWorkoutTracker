@@ -1,4 +1,4 @@
-package com.company.logic;
+package com.company.gui;
 
 /*
 Opening frame that gives you an option to start a new workout or search previous workouts
@@ -20,7 +20,6 @@ public class MainFrame extends JFrame {
         //create swing components
         JButton newWorkoutButton = new JButton("Create New Workout");
         JButton searchButton = new JButton("Search Completed Workouts");
-
 
         //add swing components to content pane
         Container c = getContentPane();

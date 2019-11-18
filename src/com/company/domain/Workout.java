@@ -20,6 +20,10 @@ public class Workout {
         return this.workout;
     }
 
+    public String getDate() {
+        return this.date;
+    }
+
     public String getDates() {
         String date = "";
         for (String key : this.workout.keySet()) {

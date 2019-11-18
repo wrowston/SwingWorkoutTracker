@@ -1,4 +1,4 @@
-package com.company.logic;
+package com.company.gui;
 
 /*
 this panel asks the user details about the exercise and allows the user to add each exercise to the workout
@@ -68,7 +68,6 @@ public class ExerciseDetailsPanel extends JPanel implements Serializable {
 
 
         /////Second Column
-
         gc.anchor = GridBagConstraints.LINE_START;
         gc.gridx = 1;
         gc.gridy = 1;
@@ -127,7 +126,7 @@ public class ExerciseDetailsPanel extends JPanel implements Serializable {
     }
 
     public void fireDetailEvent(DetailEvent event){
-        Object[] listeners = listenerList.getListenerList();
+        Object[] listeners = this.listenerList.getListenerList();
 
         for (int i = 0; i < listeners.length; i += 2) {
             if(listeners[i] == DetailListener.class) {

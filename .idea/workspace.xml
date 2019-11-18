@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c1c73d9-8c33-4e22-9edb-e5ac3237265b" name="Default Changelist" comment="" />
+    <list default="true" id="9c1c73d9-8c33-4e22-9edb-e5ac3237265b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mongodb_mongo_java_driver_3_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/workout-tracker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/workout-tracker.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/workout-tracker.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwingWorkoutTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SwingWorkoutTracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/META-INF/SwingWorkoutTracker.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/Workout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/Workout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/maven.mvn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/domain/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/Workout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/ExerciseDetailsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/ExerciseDetailsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/StartWorkoutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/StartWorkoutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/WorkoutDatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/WorkoutDatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/WorkoutInfoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/WorkoutInfoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/logic/maven.mvn" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +44,23 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/workout-tracker">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -22,16 +69,35 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1R6fZs5KO6wZEIBisvqGvcgjQTL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.175" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +113,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.logic.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.company.gui.Main" />
       <module name="SwingWorkoutTracker" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +141,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568992524721</updated>
+      <workItem from="1573849257266" duration="30000" />
+      <workItem from="1574089370488" duration="4201000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
