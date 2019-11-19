@@ -1,12 +1,8 @@
 package com.company.gui;
 
-import com.company.domain.Workout;
+import com.company.database.Mongo;
 import com.company.events.DetailEvent;
 import com.company.events.DetailListener;
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,8 +12,7 @@ import java.awt.event.ActionListener;
 public class StartWorkoutFrame extends JFrame {
 
     private ExerciseDetailsPanel exerciseDetailsPanel;
-    private WorkoutDatePanel workoutDatePanel;
-    private Workout workout;
+    private final WorkoutDatePanel workoutDatePanel;
 
     public StartWorkoutFrame(String title) {
         super(title);
@@ -28,13 +23,11 @@ public class StartWorkoutFrame extends JFrame {
 
         this.exerciseDetailsPanel = new ExerciseDetailsPanel();
         this.workoutDatePanel = new WorkoutDatePanel();
-
         final JTextArea textArea = new JTextArea();
 
         this.exerciseDetailsPanel.addDetailListener(new DetailListener(){
             public void detailEventOccurred(DetailEvent event){
-                String exerciseText = event.getExerciseText();
-
+                String exerciseText = event.getDetailText();
                 textArea.append(exerciseText);
             }
         });
@@ -42,11 +35,9 @@ public class StartWorkoutFrame extends JFrame {
         saveWorkoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //store data as a hashmap where (key = workout date, value = exerciseList)
-
-                saveWorkout();
+                String dateText = printDate();
+                saveWorkout(dateText);
                 dispose();
-                //add workout to database
             }
         });
 
@@ -58,22 +49,13 @@ public class StartWorkoutFrame extends JFrame {
         c.add(saveWorkoutButton, BorderLayout.SOUTH);
     }
 
-    public void saveWorkout() {
-        //add the date and exercise lists to database
-        this.workout = this.workoutDatePanel.getWorkout();
-        this.workoutDatePanel.getWorkout().getDate();
-        this.workout.addWorkout(this.exerciseDetailsPanel.getExerciseList());
 
+    public String printDate() {
+        return this.workoutDatePanel.getDateText().getText();
+    }
 
-        String uri = "mongodb+srv://Rowston:<NfB2014!>@cluster0-mgb11.mongodb.net/test";
-        MongoClientURI clientURI = new MongoClientURI(uri);
-        MongoClient mongoClient = new MongoClient(clientURI);
-
-        MongoDatabase mongoDatabase = mongoClient.getDatabase("WorkoutTracker");
-        MongoCollection collection = mongoDatabase.getCollection("Workouts");
-
-        //Document document = new Document("Date", )
-        //make method or class that gets key and values from hashmap created by user input
-
+    public void saveWorkout(String date) {
+        Mongo mongo = new Mongo();
+        mongo.addToDatabase(date, this.exerciseDetailsPanel.getExerciseListClass());
     }
 }

@@ -8,12 +8,12 @@ public class Workout {
     private String date;
 
     public Workout(String date) {
-        this.workout = new HashMap<>();
         this.date = date;
+        this.workout = new HashMap<>();
     }
 
-    public void addWorkout(ExerciseList exerciseList) {
-        this.workout.put(this.date, exerciseList);
+    public void addWorkout(String date, ExerciseList exerciseList) {
+        this.workout.put(date, exerciseList);
     }
 
     public Map<String, ExerciseList> getWorkout() {
@@ -22,6 +22,10 @@ public class Workout {
 
     public String getDate() {
         return this.date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getDates() {

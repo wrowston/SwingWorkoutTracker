@@ -14,16 +14,16 @@ public class ExerciseList {
         this.exerciseList.add(exercise);
     }
 
-//    public List<String> getExerciseList() {
-//        return this.exerciseList;
-//    }
+    public List<String> getExerciseList() {
+        return this.exerciseList;
+    }
 
     @Override
     public String toString() {
-        String e = "";
+        StringBuilder e = new StringBuilder();
         for (String exercise : this.exerciseList) {
-            e = exercise;
+            e.append(exercise).append(" \n");
         }
-        return e;
+        return e.toString();
     }
 }

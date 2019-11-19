@@ -9,20 +9,17 @@ Details include:
     -weight
  */
 
+import com.company.domain.ExerciseList;
 import com.company.events.DetailEvent;
 import com.company.events.DetailListener;
-import com.company.domain.ExerciseList;
 
 import javax.swing.*;
 import javax.swing.event.EventListenerList;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.Serializable;
 
-public class ExerciseDetailsPanel extends JPanel implements Serializable {
-
-    private static final long serialVersionUID = -1326984071017916448L;
+public class ExerciseDetailsPanel extends JPanel {
 
     private EventListenerList listenerList = new EventListenerList();
     private ExerciseList exerciseList = new ExerciseList();
@@ -107,7 +104,6 @@ public class ExerciseDetailsPanel extends JPanel implements Serializable {
 
                 fireDetailEvent(new DetailEvent(this, printExercise));
 
-                //clear text fields
                 exerciseText.setText("");
                 setsText.setText("");
                 repsText.setText("");
@@ -121,7 +117,7 @@ public class ExerciseDetailsPanel extends JPanel implements Serializable {
     }
 
     //might need to return an arraylist? test later
-    public ExerciseList getExerciseList() {
+    public ExerciseList getExerciseListClass() {
         return this.exerciseList;
     }
 
@@ -134,7 +130,6 @@ public class ExerciseDetailsPanel extends JPanel implements Serializable {
             }
         }
     }
-
 
     public void addDetailListener(DetailListener listener) {
         listenerList.add(DetailListener.class, listener);

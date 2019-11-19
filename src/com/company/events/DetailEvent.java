@@ -4,15 +4,15 @@ import java.util.EventObject;
 
 public class DetailEvent extends EventObject {
 
-    private String exerciseText;
+    private String detailText;
 
-    public DetailEvent(Object source, String exerciseText) {
+    public DetailEvent(Object source, String detailText) {
         super(source);
 
-        this.exerciseText = exerciseText;
+        this.detailText = detailText;
     }
 
-    public String getExerciseText(){
-        return this.exerciseText;
+    public String getDetailText(){
+        return this.detailText;
     }
 }

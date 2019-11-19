@@ -6,19 +6,11 @@ this panel allows the user to enter the date of the newly created workout
 Date makes each workout unique and searchable
  */
 
-import com.company.domain.Workout;
-
 import javax.swing.*;
-import javax.swing.event.EventListenerList;
 import java.awt.*;
-import java.io.Serializable;
 
-public class WorkoutDatePanel extends JPanel implements Serializable {
-
-    private static final long serialVersionUID = 1829291638760837942L;
-
-    private EventListenerList listenerList = new EventListenerList();
-    private Workout workout;
+public class WorkoutDatePanel extends JPanel {
+    private final JTextField dateText;
 
     public WorkoutDatePanel() {
         Dimension size = getPreferredSize();
@@ -27,8 +19,7 @@ public class WorkoutDatePanel extends JPanel implements Serializable {
         setPreferredSize(size);
 
         JLabel dateLabel = new JLabel("Today's Date (mm/dd/yy): ");
-        final JTextField dateText = new JTextField(10);
-        this.workout = new Workout(dateText.getText());
+        this.dateText = new JTextField(10);
 
         setLayout(new GridBagLayout());
 
@@ -52,7 +43,7 @@ public class WorkoutDatePanel extends JPanel implements Serializable {
 
     }
 
-    public Workout getWorkout() {
-        return this.workout;
+    public JTextField getDateText() {
+        return dateText;
     }
 }

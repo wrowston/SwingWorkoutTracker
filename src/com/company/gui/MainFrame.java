@@ -40,5 +40,14 @@ public class MainFrame extends JFrame {
             }
         });
 
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame searchFrame = new SearchFrame("Search Workouts");
+                searchFrame.setSize(900, 400);
+                searchFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                searchFrame.setVisible(true);
+            }
+        });
     }
 }
