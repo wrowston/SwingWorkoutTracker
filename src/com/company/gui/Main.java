@@ -1,5 +1,7 @@
 package com.company.gui;
 
+import com.company.gui.frames.MainFrame;
+
 import javax.swing.*;
 
 /*

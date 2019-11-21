@@ -2,32 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1c73d9-8c33-4e22-9edb-e5ac3237265b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/database/Mongo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/gui/ButtonListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/gui/SearchDetailsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/gui/SearchFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/gui/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/EventHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/AddButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/MainFrameButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/SaveButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/SearchButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/gui/frames/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/ExerciseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/ExerciseList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/Workout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/domain/Workout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/ExerciseDetailsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/MainFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/MainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/StartWorkoutFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/WorkoutDatePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/logic/WorkoutInfoPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/ExerciseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ExerciseList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/Workout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/events/DetailEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/events/DetailEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/ExerciseDetailsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/ExerciseDetailsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/StartWorkoutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/StartWorkoutFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/WorkoutDatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/WorkoutDatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/events/DateEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/events/DateListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/events/DetailEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwingWorkoutTracker/com/company/events/DetailEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/database/Mongo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/database/Mongo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/events/DateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/events/DateListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/ButtonListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/ExerciseDetailsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/panels/ExerciseDetailsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/MainFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/SearchDetailsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/panels/SearchDetailsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/frames/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/StartWorkoutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/frames/WorkoutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/WorkoutDatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/panels/WorkoutDatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/WorkoutInfoPanel.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +72,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -158,7 +155,10 @@
       <workItem from="1574095030950" duration="2618000" />
       <workItem from="1574098790600" duration="14029000" />
       <workItem from="1574114087012" duration="690000" />
-      <workItem from="1574120490698" duration="13615000" />
+      <workItem from="1574120490698" duration="13731000" />
+      <workItem from="1574281622262" duration="11710000" />
+      <workItem from="1574293618760" duration="778000" />
+      <workItem from="1574350858003" duration="4882000" />
     </task>
     <task id="LOCAL-00001" summary="refactor logic package to gui package">
       <created>1574093657681</created>
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574093657681</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="connected to mongoDB compass and added functionality to add and retrieve stored data">
+      <created>1574181268751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574181268751</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor logic package to gui package" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor logic package to gui package" />
+    <MESSAGE value="connected to mongoDB compass and added functionality to add and retrieve stored data" />
+    <option name="LAST_COMMIT_MESSAGE" value="connected to mongoDB compass and added functionality to add and retrieve stored data" />
   </component>
 </project>

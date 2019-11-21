@@ -1,4 +1,4 @@
-package com.company.gui;
+package com.company.gui.panels;
 
 /*
 this panel allows the user to enter the date of the newly created workout

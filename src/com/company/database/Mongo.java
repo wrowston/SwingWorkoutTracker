@@ -1,9 +1,6 @@
 package com.company.database;
 
 import com.company.domain.ExerciseList;
-import com.company.domain.Workout;
-import com.company.gui.ExerciseDetailsPanel;
-import com.company.gui.WorkoutDatePanel;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
@@ -15,11 +12,6 @@ import java.util.List;
 
 public class Mongo {
 
-    private ExerciseDetailsPanel exerciseDetailsPanel;
-    private WorkoutDatePanel workoutDatePanel;
-
-    private List<Workout> workouts;
-
     private String uri;
     private MongoClientURI clientURI;
     private MongoClient mongoClient;
@@ -27,10 +19,6 @@ public class Mongo {
     private MongoCollection<Document> collection;
 
     public Mongo() {
-        this.exerciseDetailsPanel = new ExerciseDetailsPanel();
-        this.workoutDatePanel = new WorkoutDatePanel();
-        this.workouts = new ArrayList<>();
-
         this.uri = "mongodb+srv://Rowston:NfB2014!@cluster0-mgb11.mongodb.net/test";
         this.clientURI = new MongoClientURI(this.uri);
         this.mongoClient = new MongoClient(this.clientURI);
@@ -39,11 +27,6 @@ public class Mongo {
     }
 
     public void addToDatabase(String date, ExerciseList el) {
-        Workout workout = new Workout(date);
-        workout.addWorkout(date, el);
-
-        this.workouts.add(workout);
-
         List<String> exerciseList = el.getExerciseList();
 
         Document document = new Document("Date", date);
@@ -58,17 +41,29 @@ public class Mongo {
 
     public String searchByDate(String text) {
         List<Document> documents = collection.find().into(new ArrayList<>());
+        StringBuilder docInfo = new StringBuilder();
 
         for(Document document : documents){
             if (document.containsValue(text)) {
-                return printFoundWorkout(document);
+                docInfo.append(printFoundWorkout(document));
             }
         }
-        return "File not found in database";
+        return docInfo.toString();
+    }
+
+    public String showAll() {
+        List<Document> documents = collection.find().into(new ArrayList<>());
+        StringBuilder docInfo = new StringBuilder();
+
+        for (Document document : documents) {
+            docInfo.append(printFoundWorkout(document));
+        }
+        return docInfo.toString();
     }
 
     public String printFoundWorkout(Document document) {
         StringBuilder docInfo = new StringBuilder();
+
         for (String key : document.keySet()) {
             docInfo.append(key).append(": ").append(document.get(key).toString()).append("\n");
         }
