@@ -40,7 +40,6 @@ public class SearchButtonListener implements ActionListener {
 
             eventHandling.fireDetailEvent(new DetailEvent(panel, documents));
         }
-
     }
 
     public EventHandling getEventHandling() {

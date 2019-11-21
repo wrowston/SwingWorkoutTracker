@@ -39,6 +39,7 @@ public class SearchFrame extends JFrame {
         listener.getEventHandling().addDetailListener(new DetailListener() {
             @Override
             public void detailEventOccurred(DetailEvent event) {
+                textArea.setText("");
                 String searchDate = event.getDetailText();
                 textArea.append(searchDate);
             }
