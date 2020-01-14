@@ -22,6 +22,7 @@ public class AddButtonListener implements ActionListener {
     private JTextField sets;
     private JTextField reps;
     private JTextField weight;
+    private JTextField notes;
     private ExerciseList exerciseList;
     private JPanel panel;
 
@@ -29,12 +30,13 @@ public class AddButtonListener implements ActionListener {
     private String exerciseText;
 
     public AddButtonListener(JButton addExercise, JTextField exerciseType, JTextField sets, JTextField reps,
-                             JTextField weight, ExerciseList exerciseList, JPanel panel) {
+                             JTextField weight, JTextField notes, ExerciseList exerciseList, JPanel panel) {
         this.addExercise = addExercise;
         this.exerciseType = exerciseType;
         this.sets = sets;
         this.reps = reps;
         this.weight = weight;
+        this.notes = notes;
         this.exerciseList = exerciseList;
         this.panel = panel;
 
@@ -51,9 +53,10 @@ public class AddButtonListener implements ActionListener {
             String sets = this.sets.getText();
             String reps = this.reps.getText();
             String weight = this.weight.getText();
+            String notes = this.notes.getText();
 
             this.exerciseText = "Exercise Type: " + exerciseType + " | " +
-                    sets + " sets | " + reps + " reps | " + weight + " pounds\n";
+                    sets + " sets | " + reps + " reps | " + weight + " pounds\n" + "Notes: " + notes + "\n";
 
             this.exerciseList.addExercise(exerciseText);
 
@@ -63,6 +66,7 @@ public class AddButtonListener implements ActionListener {
             this.sets.setText("");
             this.reps.setText("");
             this.weight.setText("");
+            this.notes.setText("");
         }
     }
 

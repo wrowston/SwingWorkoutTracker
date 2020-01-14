@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SwingWorkoutTracker.iml" filepath="$PROJECT_DIR$/SwingWorkoutTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/workout-tracker.iml" filepath="$PROJECT_DIR$/.idea/modules/workout-tracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/workout-tracker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/workout-tracker.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/workout-tracker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/workout-tracker.test.iml" />

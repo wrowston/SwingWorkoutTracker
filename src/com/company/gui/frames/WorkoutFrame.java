@@ -39,10 +39,10 @@ public class WorkoutFrame extends JFrame {
 
     public void buttonBehavior() {
 
-        AddButtonListener addButtonListener = new AddButtonListener(this.exerciseDetailsPanel.getAddExerciseButton(),
+        AddButtonListener addButtonListener = new AddButtonListener(exerciseDetailsPanel.getAddExerciseButton(),
                 exerciseDetailsPanel.getExerciseText(), exerciseDetailsPanel.getSetsText(),
                 exerciseDetailsPanel.getRepsText(), exerciseDetailsPanel.getWeightText(),
-                exerciseDetailsPanel.getExerciseListClass(), exerciseDetailsPanel);
+                exerciseDetailsPanel.getNotesText(), exerciseDetailsPanel.getExerciseListClass(), exerciseDetailsPanel);
 
         this.exerciseDetailsPanel.getAddExerciseButton().addActionListener(addButtonListener);
 
@@ -53,8 +53,8 @@ public class WorkoutFrame extends JFrame {
             }
         });
 
-        SaveButtonListener listener = new SaveButtonListener(saveWorkoutButton, this.workoutDatePanel.getDateText(),
-                this.exerciseDetailsPanel.getExerciseListClass(), this);
+        SaveButtonListener listener = new SaveButtonListener(saveWorkoutButton, workoutDatePanel.getDateText(),
+                exerciseDetailsPanel.getExerciseListClass(), this);
         this.saveWorkoutButton.addActionListener(listener);
     }
 }

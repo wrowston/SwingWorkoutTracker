@@ -22,6 +22,7 @@ public class ExerciseDetailsPanel extends JPanel {
     private JTextField setsText;
     private JTextField repsText;
     private JTextField weightText;
+    private JTextField notesText;
 
     public ExerciseDetailsPanel(){
         Dimension size = getPreferredSize();
@@ -34,11 +35,13 @@ public class ExerciseDetailsPanel extends JPanel {
         JLabel setsLabel = new JLabel("Sets: ");
         JLabel repsLabel = new JLabel("Reps: ");
         JLabel weightLabel = new JLabel("Weight: ");
+        JLabel notesLabel = new JLabel("Notes: ");
 
         this.exerciseText = new JTextField(10);
         this.setsText = new JTextField(10);
         this.repsText = new JTextField(10);
         this.weightText = new JTextField(10);
+        this.notesText = new JTextField(10);
 
         setLayout(new GridBagLayout());
 
@@ -62,6 +65,9 @@ public class ExerciseDetailsPanel extends JPanel {
         gc.gridy = 4;
         add(weightLabel, gc);
 
+        gc.gridy = 5;
+        add(notesLabel, gc);
+
 
         /////Second Column
         gc.anchor = GridBagConstraints.LINE_START;
@@ -78,12 +84,15 @@ public class ExerciseDetailsPanel extends JPanel {
         gc.gridy = 4;
         add(weightText, gc);
 
+        gc.gridy = 5;
+        add(notesText, gc);
+
         ///Final row
 
         this.addExerciseButton = new JButton("Add Exercise");
 
         gc.gridx = 1;
-        gc.gridy = 5;
+        gc.gridy = 6;
         add(addExerciseButton, gc);
 
     }
@@ -106,6 +115,10 @@ public class ExerciseDetailsPanel extends JPanel {
 
     public JTextField getWeightText() {
         return weightText;
+    }
+
+    public JTextField getNotesText() {
+        return notesText;
     }
 
     public ExerciseList getExerciseListClass() {

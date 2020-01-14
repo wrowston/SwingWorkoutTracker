@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1c73d9-8c33-4e22-9edb-e5ac3237265b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.uiDesigner.xml.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/.codeStyleConfig.xml.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/.Project_Default.xml.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/SwingWorkoutTracker.workout-tracker.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/workout-tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/workout-tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/SearchButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/SearchButtonListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gui/frames/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/frames/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/UserInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/AddButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/buttonlisteners/AddButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/frames/WorkoutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/frames/WorkoutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gui/panels/ExerciseDetailsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/panels/ExerciseDetailsPanel.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +79,12 @@
   </component>
   <component name="ProjectId" id="1R6fZs5KO6wZEIBisvqGvcgjQTL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -89,18 +107,6 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.gui.Main" />
@@ -121,6 +127,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,7 +157,14 @@
       <workItem from="1574120490698" duration="13731000" />
       <workItem from="1574281622262" duration="11710000" />
       <workItem from="1574293618760" duration="778000" />
-      <workItem from="1574350858003" duration="5912000" />
+      <workItem from="1574350858003" duration="6126000" />
+      <workItem from="1576102566577" duration="177000" />
+      <workItem from="1576883499998" duration="166000" />
+      <workItem from="1578103036790" duration="77000" />
+      <workItem from="1578158985451" duration="377000" />
+      <workItem from="1578859738178" duration="755000" />
+      <workItem from="1579023044051" duration="589000" />
+      <workItem from="1579024988323" duration="680000" />
     </task>
     <task id="LOCAL-00001" summary="refactor logic package to gui package">
       <created>1574093657681</created>
@@ -162,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574355864745</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added function to clear search output after creating a new search">
+      <created>1574356936250</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574356936250</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +217,37 @@
     <MESSAGE value="refactor logic package to gui package" />
     <MESSAGE value="connected to mongoDB compass and added functionality to add and retrieve stored data" />
     <MESSAGE value="improved organization and readability and implemented search buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved organization and readability and implemented search buttons" />
+    <MESSAGE value="added function to clear search output after creating a new search" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to clear search output after creating a new search" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1579025693260">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/-1440.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1579025693260" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578861028856" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578861228801" />
+    <state width="1878" height="174" key="GridCell.Tab.0.bottom/0.23.1920.997@0.23.1920.997" timestamp="1576883665903" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1579025693257">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.center/-1440.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1579025693257" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578861028854" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578861228800" />
+    <state width="1878" height="174" key="GridCell.Tab.0.center/0.23.1920.997@0.23.1920.997" timestamp="1576883665901" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1579025693255">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.left/-1440.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1579025693255" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578861028854" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578861228799" />
+    <state width="1878" height="174" key="GridCell.Tab.0.left/0.23.1920.997@0.23.1920.997" timestamp="1576883665901" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1579025693259">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1579025693259" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578861028855" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578861228800" />
+    <state width="1878" height="174" key="GridCell.Tab.0.right/0.23.1920.997@0.23.1920.997" timestamp="1576883665902" />
   </component>
 </project>
